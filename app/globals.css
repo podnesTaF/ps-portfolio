@@ -16,103 +16,39 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: 600;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 4rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
 }
 
-.gradient-text {
-  background-image: linear-gradient(
-    153deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 1) 48%,
-    rgba(255, 255, 255, 0.4) 100%
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
   );
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
 
-.bg-gradient-1 {
-  background: rgb(2, 12, 42);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 12, 42, 1) 0%,
-    rgba(4, 18, 59, 1) 100%
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
   );
+
+  --imp-text-color: #c770f0;
 }
 
-.bg-gradient-2 {
-  background: rgb(6, 23, 74);
-  background: linear-gradient(180deg, #04123a 0%, #06174b 100%);
+body {
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.bg-gradient-3 {
-  background: rgb(13, 38, 106);
-  background: linear-gradient(180deg, #06174a 0%, #0d266a 100%);
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
 }
 
-.bg-gradient-4 {
-  background: rgb(26, 60, 154);
-  background: linear-gradient(180deg, #0d2669 0%, #1a3d9b 100%);
-}
-
-.bg-gradient-5 {
-  background: rgb(23, 93, 194);
-  background: linear-gradient(180deg, #1a3c9a 0%, #0d266a 100%);
-}
-
-.bg-navbar {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 1) 23%,
-    rgba(255, 255, 255, 1) 73%,
-    rgba(255, 255, 255, 0.4) 100%
-  );
-}
-
-.bg-light-gradient {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-}
