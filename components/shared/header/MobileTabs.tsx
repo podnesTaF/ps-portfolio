@@ -9,10 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const MobileTabs = () => {
   const pathname = usePathname();
   return (
-    <div className="md:hidden w-full flex fixed bottom-0 left-0 justify-between py-2 px-2 bg-[#1b1a2ea9] backdrop-blur-lg">
+    <div className="md:hidden w-full mobileTabs transition-all flex fixed bottom-0 left-0 justify-between py-2 px-2 bg-[#1b1a2ea9] backdrop-blur-lg z-10">
       <Swiper
         spaceBetween={20}
-        slidesPerView={4}
+        slidesPerView={2}
         breakpoints={{
           0: {
             slidesPerView: 2.5,

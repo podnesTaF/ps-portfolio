@@ -28,7 +28,7 @@ export const SocialIcons = () => {
   ));
 
   return (
-    <div className={"fixed top-20 right-6 hidden md:flex flex-col gap-2"}>
+    <div className={"fixed top-20 right-6 hidden md:flex flex-col gap-2 z-10"}>
       {socialItems}
     </div>
   );

@@ -12,7 +12,7 @@ const SideNavigation = () => {
   }
 
   return (
-    <div className="fixed top-1/2  flex gap-4 -rotate-90 left-[-140px] md:left-[-140px]">
+    <div className="fixed top-1/2  gap-4 -rotate-90 left-[-140px] md:left-[-140px] z-10 hidden sm:flex">
       {pageSections[pathname as keyof typeof pageSections]?.map((section) => (
         <Link
           href={section.href}

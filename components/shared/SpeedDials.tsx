@@ -26,7 +26,7 @@ export const SpeedDials = () => {
     <>
       <SpeedDial
         ariaLabel="SpeedDial"
-        className="absolute top-2 right-4 z-50"
+        className="absolute top-2 right-4 z-50 md:!hidden"
         hidden={false}
         classes={{
           fab: "bg-primary",
