@@ -1,14 +1,14 @@
 export const pageSections = {
   "/": [
     {
-      id: 1,
-      title: "welcome",
-      href: "#welcome",
+      id: 5,
+      title: "Challenge",
+      href: "#github",
     },
     {
-      id: 2,
-      title: "What I offer",
-      href: "#what-i-offer",
+      id: 4,
+      title: "Skills",
+      href: "#skills",
     },
     {
       id: 3,
@@ -16,9 +16,14 @@ export const pageSections = {
       href: "#experience",
     },
     {
-      id: 4,
-      title: "Skills",
-      href: "#skills",
+      id: 2,
+      title: "What I offer",
+      href: "#what-i-offer",
+    },
+    {
+      id: 1,
+      title: "Welcome",
+      href: "#welcome",
     },
   ],
 };

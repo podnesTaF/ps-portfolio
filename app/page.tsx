@@ -1,12 +1,16 @@
 "use client";
 
-import Image from "next/image";
+import Experience from "@/components/home/Experience";
+import GitHub from "@/components/home/GitHub";
+import Skills from "@/components/home/Skills";
+import TechStack from "@/components/home/TechStack";
+import AnimatedImage from "@/components/shared/AnimatedImage";
 
 export default function Home() {
   return (
     <>
-      <div className="overflow-hidden relative">
-        <div className="heroElem overflow-hidden w-full pt-20 pb-40 h-screen  m-auto flex justify-center text-center flex-col items-center">
+      <section id="welcome" className="overflow-hidden relative">
+        <div className="heroElem overflow-hidden w-full pt-20 pb-40 px-3 h-screen  m-auto flex justify-center text-center flex-col items-center">
           <p className="text-xl lg:text-2xl mb-5 text-white">
             Hi, I&apos;m Oleksii.
           </p>
@@ -17,16 +21,13 @@ export default function Home() {
           <h4 className="text-lg lg:text-xl xl:text-2xl text-white">
             Welcome to my <span className="text-primary">portfolio</span>!
           </h4>
-          <Image
-            width={500}
-            height={500}
-            src="/images/main-me.png"
-            alt="my image"
-            className=" overflow-hidden 3xl:h-[600px] 3xl:w-[600px] absolute right-0 bottom-0 object-cover -z-10"
-          />
+          <AnimatedImage src="/images/main-me.png" alt="hero" />
         </div>
-      </div>
-      <div className="h-screen"></div>
+      </section>
+      <TechStack />
+      <Experience />
+      <Skills />
+      <GitHub />
     </>
   );
 }
