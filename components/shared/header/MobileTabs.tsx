@@ -32,9 +32,10 @@ const MobileTabs = () => {
           <SwiperSlide key={link.id}>
             <Link
               key={link.id}
-              className={`flex items-center justify-center gap-2 hover:text-white/80 hover:bg-dark px-3 py-2 rounded-md ${
-                pathname === link.href ? "text-primary " : "text-white"
-              }`}
+              className={`flex items-center justify-center gap-2 hover:text-white/80  px-3 py-2 rounded-md `}
+              style={{
+                color: pathname === link.href ? "#915EFF" : "#fff",
+              }}
               href={link.href}
             >
               <link.icon />

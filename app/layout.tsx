@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import Particle from "@/components/shared/Particles";
 import Header from "@/components/shared/header/Header";
 import MuiProvider from "@/providers/MuiProvider";
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Particle />
           <Header />
           {children}
+          <Footer />
         </MuiProvider>
       </body>
     </html>

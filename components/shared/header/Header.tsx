@@ -1,7 +1,7 @@
 "use client";
 import { headerLinks } from "@/content";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SocialIcons } from "../SocialIcons";
 import { SpeedDials } from "../SpeedDials";
@@ -11,6 +11,7 @@ import SideNavigation from "./SideNavigation";
 const Header = () => {
   const [navColour, updateNavbar] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -37,15 +38,20 @@ const Header = () => {
         }}
       >
         <div className="py-3 px-5 w-full flex  justify-between gap-5 items-center ">
-          <h2 className="text-primary font-bold text-2xl lg:text-3xl">
+          <h2
+            onClick={() => router.push("/")}
+            className="text-primary font-bold text-2xl lg:text-3xl cursor-pointer"
+          >
             O.P Portfolio
           </h2>
           <nav className="hidden md:flex gap-4 lg:gap-6">
             {headerLinks.map((link) => (
               <Link
                 key={link.id}
-                className={`flex items-center gap-2 lg:gap-3 text-white hover:bg-dark px-3 py-2 rounded-md ${
-                  pathname === link.href ? "bg-primary hover:bg-primary/80" : ""
+                className={`flex items-center gap-2 lg:gap-3  hover:bg-dark px-3 py-2 rounded-md ${
+                  pathname === link.href
+                    ? "text-primary hover:text-primary/80"
+                    : "text-white"
                 }`}
                 href={link.href}
               >
