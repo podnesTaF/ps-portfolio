@@ -17,6 +17,9 @@ const config: Config = {
         primary: "#915EFF",
         dark: "#171126",
       },
+      maxWidth: {
+        "8xl": "1480px",
+      },
       screens: {
         "3xl": "1920px",
       },
