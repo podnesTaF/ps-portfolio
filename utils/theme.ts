@@ -2,6 +2,12 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 
 export const lightTheme = responsiveFontSizes(
   createTheme({
+    palette: {
+      primary: {
+        main: "#915EFF",
+        contrastText: "#fff",
+      },
+    },
     components: {
       MuiFab: {
         styleOverrides: {
