@@ -36,7 +36,7 @@ const AnimatedImage = ({
       height={(height as number) || 500}
       {...props}
       alt={alt ?? "image"}
-      className={`overflow-hidden 3xl:h-[600px] 3xl:w-[600px] fixed right-0 bottom-0 object-cover -z-10 ${
+      className={`overflow-hidden max-w-[80%] 3xl:h-[600px] 3xl:w-[600px] fixed right-0 bottom-0 object-cover -z-10 ${
         isScrolled ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"
       }`}
       style={{ transition: "all 0.5s ease-in-out" }}
