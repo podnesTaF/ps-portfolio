@@ -33,7 +33,7 @@ const DocsPage = async ({ params }: DocPageProps) => {
 
   return (
     <main className="relative lg:gap-10 py-20 flex justify-center max-w-7xl mx-auto w-full">
-      <div className="flex-1 max-w-4xl px-4">
+      <div className="lg:flex-1 max-w-4xl px-4">
         <div className={"space-y-4 mb-4"}>
           <h1 className="inline-block font-heading text-4xl lg:text-5xl text-white">
             {doc.title}

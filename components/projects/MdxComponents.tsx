@@ -2,8 +2,10 @@ import clsx from "clsx";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { HTMLAttributes } from "react";
 import { Callout } from "./Callout";
+import CardContainer from "./CardContainer";
 import { MdxCard } from "./MdxCard";
 import MdxImage from "./MdxImage";
+import ProjectsIntro from "./ProjectsIntro";
 
 const components = {
   h1: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
@@ -27,7 +29,7 @@ const components = {
   h3: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={clsx(
-        "text-primary mt-8 scroll-m-20 text-2xl font-semibold tracking-tight border-b-0",
+        "text-[#dfd8ff] mt-8 scroll-m-20 text-2xl font-semibold tracking-tight border-b-0",
         className
       )}
       {...props}
@@ -164,7 +166,9 @@ const components = {
   ),
   MdxImage,
   Callout,
+  ProjectsIntro,
   Card: MdxCard,
+  CardContainer,
 };
 
 interface MdxProps {
