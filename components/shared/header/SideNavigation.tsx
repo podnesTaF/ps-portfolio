@@ -1,6 +1,6 @@
 "use client";
 
-import { pageSections } from "@/content/page-sections";
+import { pageSections } from "@/lib/page-sections";
 import { Link } from "@mui/material";
 import { usePathname } from "next/navigation";
 

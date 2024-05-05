@@ -1,4 +1,4 @@
-import { TExperience, experiences } from "@/content/home/experiences";
+import { TExperience, experiences } from "@/lib/home/experiences";
 import Image from "next/image";
 import React from "react";
 import {

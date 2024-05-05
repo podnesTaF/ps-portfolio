@@ -1,6 +1,6 @@
 "use client";
 
-import { skills } from "@/content/home/skills";
+import { skills } from "@/lib/home/skills";
 import { useEffect, useRef } from "react";
 import SkillCard from "./SkillCard";
 

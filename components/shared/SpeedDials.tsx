@@ -1,4 +1,4 @@
-import { socialLinks } from "@/content";
+import { socialLinks } from "@/lib";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import React from "react";
 

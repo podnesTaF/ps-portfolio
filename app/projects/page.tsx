@@ -2,7 +2,7 @@
 
 import ProjectFilter from "@/components/about/ProjectFilter";
 import { LazyLottie } from "@/components/projects/DisplayLottie";
-import { filters } from "@/content/projects/filters";
+import { filters } from "@/lib/projects/filters";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
