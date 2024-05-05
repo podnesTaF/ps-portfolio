@@ -38,7 +38,7 @@ export const sideBarNavContent: SidebarNavItem[] = [
       },
       {
         title: "Ace Battle Mile Mobile",
-        href: "/projects/abm-web",
+        href: "/projects/abm-mobile",
       },
     ],
   },

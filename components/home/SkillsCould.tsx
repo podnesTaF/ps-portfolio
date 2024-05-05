@@ -37,8 +37,8 @@ const WordCloud = () => {
     if (!initialized.current) {
       TagCloud(container as any, texts, {
         radius: 300,
-        maxSpeed: "fast",
-        initSpeed: "fast",
+        maxSpeed: "normal",
+        initSpeed: "normal",
         keep: true,
       });
       initialized.current = true;
