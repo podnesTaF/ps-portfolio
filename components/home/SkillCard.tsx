@@ -1,4 +1,4 @@
-import { Skill } from "@/content/home/skills";
+import { Skill } from "@/lib/home/skills";
 
 const SkillCard = ({ title, Icon, description, techItems, id }: Skill) => {
   return (

@@ -1,4 +1,4 @@
-import { socialLinks } from "@/content";
+import { socialLinks } from "@/lib";
 import { IconButton, Link, Tooltip, Zoom } from "@mui/material";
 
 export const SocialIcons = () => {

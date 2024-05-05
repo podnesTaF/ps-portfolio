@@ -1,5 +1,5 @@
 "use client";
-import { headerLinks } from "@/content";
+import { headerLinks } from "@/lib";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";

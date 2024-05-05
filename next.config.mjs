@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withContentlayer } from "next-contentlayer";
+export default withContentlayer({
+  images: {
+    domains: ["storage.googleapis.com"],
+  },
+});
 
-export default nextConfig;
