@@ -40,6 +40,18 @@ export const sideBarNavContent: SidebarNavItem[] = [
         title: "Ace Battle Mile Mobile",
         href: "/projects/abm-mobile",
       },
+      {
+        title: "AHMO chat",
+        href: "/projects/ahmo-platforms",
+      },
+      {
+        title: "CFIT Factory",
+        href: "/projects/cfit-factory",
+      },
+      {
+        title: "FeatureCraftJs",
+        href: "/projects/feature-craft-js",
+      },
     ],
   },
 ];

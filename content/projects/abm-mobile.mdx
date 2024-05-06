@@ -13,7 +13,7 @@ tags: Mobile,UX/UI,CrossPlatform
 
 ## Objective
 
-The goal was not only create a good user experience for informational website, but to structure the whole ecosystem including payments, memberships, custom admin dashboards etc.
+The primary objective was to design and develop a mobile application that offers a seamless user experience for Ace Battle Association's audience. The aim was to provide functionalities such as memberships, notifications, and role-based access controls within the mobile environment. Additionally, the goal was to ensure smooth integration with the existing ecosystem while delivering a visually appealing and intuitive interface tailored for mobile devices.
 
 ## About Client
 
@@ -32,13 +32,20 @@ their need in high quality software is essential.
 
 ## Challenge
 
-Ace Battle Association was very specific client, since it is a new organization,
-without any previous IT projects implemented. Throughout a year working for this
-companies we changed multiple projects and still updating existed.
+Ace Battle Association was a very specific client, being a new organization without any previous IT projects implemented. Throughout a year of working with this company, we initiated multiple projects and continuously updated existing ones.
 
 ## Functionality
 
 ### Memberships
+
+The task was to build a user-friendly membership-based user roles system. The roles include:
+
+> - Visitor (Base role)
+> - Runner
+> - Coach
+> - Manager
+
+Each role has different access to various pages, and there is connectivity between roles, ensuring a seamless experience for users based on their roles and permissions.
 
 <MdxImage
   src="https://storage.googleapis.com/abe_cloud_storage/website%2Fmembership-mobile.png"
@@ -47,33 +54,32 @@ companies we changed multiple projects and still updating existed.
   className="mx-auto mt-5 mb-4"
 />
 
-The task were to build a user friendly membership based user roles.
-The roles are:
+### Events Registration and Result Analysis
 
-> - Visitor (Base role)
-> - Runner
-> - Coach
-> - Manager
+Feature allows users to seamlessly register for upcoming events and provides comprehensive analysis of their performance post-event. From registration to result analysis, this feature streamlines the event participation process and empowers users with valuable insights to enhance their athletic endeavors.
 
-Each role has different access to different pages. There are a connectivity between roles
+<MdxImage
+  src="https://storage.googleapis.com/abe_cloud_storage/website%2Fevents-overview.png"
+  width={800}
+  height={500}
+  className="mx-auto mt-5 mb-4"
+/>
 
 ### Notification System
 
 <div className="flex flex-col md:flex-row justify-between gap-4">
-  <div>
   
-  Of course the app suggests at least basic notification system. Users get
-  notifications from different users, system. They may also get notification to
-  their phones.
+<div>
+  The app incorporates a comprehensive notification system to keep users informed about various activities and updates. Users receive notifications from different users and the system itself, enhancing communication and engagement. Additionally, notifications are sent directly to users' phones for timely updates and alerts.
+ 
+>  Expo provides an easy-to-use platform for building and testing the notification system, while Socket.IO ensures real-time updates and synchronization within the app.
+</div>
 
-> Expo gives opportunity to easily build and test notification System. While socket io make sure everything being updated when using the app.
+<MdxImage
+  src="https://storage.googleapis.com/abe_cloud_storage/website%2Fnotification-system.png"
+  width={500}
+  height={300}
+  className="mt-5 mb-4 object-contain object-bottom"
+/>
 
-  </div>
-
-  <MdxImage
-    src="https://storage.googleapis.com/abe_cloud_storage/website%2Fnotification-system.png"
-    width={500}
-    height={300}
-    className="mt-5 mb-4"
-  />
 </div>

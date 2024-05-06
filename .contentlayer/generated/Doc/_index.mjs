@@ -3,6 +3,8 @@
 import projects__abmMobileMdx from './projects__abm-mobile.mdx.json' assert { type: 'json' }
 import projects__abmWebMdx from './projects__abm-web.mdx.json' assert { type: 'json' }
 import projects__ahmoPlatformsMdx from './projects__ahmo-platforms.mdx.json' assert { type: 'json' }
+import projects__cfitFactoryMdx from './projects__cfit-factory.mdx.json' assert { type: 'json' }
+import projects__featureCraftJsMdx from './projects__feature-craft-js.mdx.json' assert { type: 'json' }
 import projects__indexMdx from './projects__index.mdx.json' assert { type: 'json' }
 
-export const allDocs = [projects__abmMobileMdx, projects__abmWebMdx, projects__ahmoPlatformsMdx, projects__indexMdx]
+export const allDocs = [projects__abmMobileMdx, projects__abmWebMdx, projects__ahmoPlatformsMdx, projects__cfitFactoryMdx, projects__featureCraftJsMdx, projects__indexMdx]
