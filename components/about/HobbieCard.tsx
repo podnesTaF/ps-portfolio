@@ -8,6 +8,7 @@ interface HobbieCardProps {
   id: number;
   subtitle: string;
   imageUrl: string;
+  tags: string[];
   Icon: React.ElementType;
 }
 
@@ -17,6 +18,7 @@ const HobbieCard = ({
   subtitle,
   imageUrl,
   Icon,
+  tags,
 }: HobbieCardProps): JSX.Element => {
   return (
     <Tilt
@@ -43,8 +45,26 @@ const HobbieCard = ({
         </div>
         <div className="p-5">
           <h3 className="text-3xl text-white">{title}</h3>
-          <p className="mt-2 text-lg md:text-xl text-gray-300 font-medium">
+          <p className="mt-2 text-base md:text-lg text-gray-300 font-medium">
             {subtitle}
+          </p>
+        </div>
+        <div className="py-2 border-t-2 border-t-gray-200">
+          <p>
+            {tags.map((t, i) => (
+              <span
+                key={i}
+                className={`text-gray-200 text-sm md:text-base px-2 py-1 ${
+                  i % 2 === 0
+                    ? "text-primary"
+                    : i % 2 === 1
+                    ? "text-green-400"
+                    : "text-gray-300"
+                }`}
+              >
+                #{t}
+              </span>
+            ))}
           </p>
         </div>
       </div>

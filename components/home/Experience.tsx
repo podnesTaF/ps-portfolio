@@ -33,10 +33,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
     >
       <div>
         <h3 className="text-[24px] font-bold text-white">{experience.title}</h3>
-        <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
-        >
+        <p className="text-secondary text-[16px] font-semibold m-0">
           {experience.companyName}
         </p>
       </div>

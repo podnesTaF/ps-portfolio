@@ -39,6 +39,13 @@ export function MdxCard({
         className="object-center object-contain w-full max-h-[250px] flex-1"
         alt="project image"
       />
+      {inProgress && (
+        <div className="absolute top-4 right-4 px-3 py-1 rounded-md bg-black bg-opacity-50 flex items-center justify-center">
+          <p className="text-white text-base lg:text-lg font-semibold">
+            In Progress
+          </p>
+        </div>
+      )}
       <div className="my-3">
         <h4 className="text-lg lg:text-xl">{title}</h4>
         <hr className="h-1" />

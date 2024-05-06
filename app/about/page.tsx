@@ -12,12 +12,12 @@ const points = [
   {
     id: 1,
     Icon: AssignmentLateIcon,
-    title: "Amount of challenges is outstanding",
+    title: "The amount of challenges is remarkable.",
   },
   {
     id: 2,
     Icon: ReplayCircleFilledIcon,
-    title: "Requirements of consistency",
+    title: "Demands for consistency",
   },
   {
     id: 3,
@@ -33,6 +33,7 @@ const hobbies = [
     imageUrl: "/images/crossfit.png",
     subtitle: "I like killing my joints with crossfit",
     Icon: FitnessCenterIcon,
+    tags: ["BrokenKnees", "DeadShoulders", "SweatBurpees"],
   },
   {
     id: 2,
@@ -40,13 +41,16 @@ const hobbies = [
     subtitle: "I'm not bad at running",
     imageUrl: "/images/running.png",
     Icon: DirectionsRunIcon,
+    tags: ["Sport", "Endurance", "Runnings"],
   },
   {
     id: 3,
     title: "Reading",
-    subtitle: "Enhancing my critical and imaginative thought processes.",
+    subtitle:
+      "Enhancing my critical and imaginative thinking by enjoying lovely books",
     imageUrl: "/images/philosophy.png",
     Icon: AutoStoriesIcon,
+    tags: ["Philosophy", "Science", "History"],
   },
   {
     id: 4,
@@ -54,6 +58,7 @@ const hobbies = [
     subtitle: "At least trying...",
     imageUrl: "/images/design.jpg",
     Icon: BrushIcon,
+    tags: ["Figma", "Photoshop", "Aminations"],
   },
 ];
 
@@ -81,9 +86,9 @@ const AboutMe = () => {
                 That is why I <span className="text-primary">Code</span>.
               </h2>
               <p className=" px-4 text-lg leading-6 2xl:leading-8 2xl:text-xl text-white/70">
-                It is hard to say why I&apos;m codding since I don&apos;t
-                remember myself without it. However, there are key reasons why I
-                chose IT:
+                It&apos;s difficult to pinpoint why I started coding because I
+                can&apos;t recall a time when I wasn&qpos;t involved in it.
+                However, there are several key reasons why I chose IT:
               </p>
               <div className="flex flex-col gap-3 my-3 px-4">
                 {points.map((point) => (
@@ -98,6 +103,10 @@ const AboutMe = () => {
                   </div>
                 ))}
               </div>
+              <p className=" px-4 text-lg leading-6 2xl:leading-8 2xl:text-xl text-white/70">
+                Therefore, I believe that the weaknesses of coding are, in fact,
+                my strong points.
+              </p>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl p-2 md:p-7 w-full max-w-[400px] md:max-w-none md:w-2/5 overflow-hidden">
