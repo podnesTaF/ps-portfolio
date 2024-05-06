@@ -48,10 +48,10 @@ const Header = () => {
             {headerLinks.map((link) => (
               <Link
                 key={link.id}
-                className={`flex items-center gap-2 lg:gap-3  hover:bg-dark px-3 py-2 rounded-md ${
+                className={`flex items-center gap-2 lg:gap-3 px-3 py-2 rounded-md ${
                   pathname === link.href
                     ? "text-primary hover:text-primary/80"
-                    : "text-white"
+                    : "text-white hover:text-gray-300"
                 }`}
                 href={link.href}
               >
