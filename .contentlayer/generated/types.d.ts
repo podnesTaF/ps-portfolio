@@ -18,6 +18,8 @@ export type Doc = {
   tags?: string | undefined
   date?: string | undefined
   published: boolean
+  githubUrl?: string | undefined
+  websiteUrl?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string

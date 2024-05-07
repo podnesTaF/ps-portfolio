@@ -2,6 +2,8 @@ import { Mdx } from "@/components/projects/MdxComponents";
 import { DashboardTableOfContents } from "@/components/projects/Toc";
 import { DocsPager } from "@/components/projects/pager";
 import { getTableOfContents } from "@/lib/projects/toc";
+import { GitHub } from "@mui/icons-material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 
@@ -44,6 +46,28 @@ const DocsPage = async ({ params }: DocPageProps) => {
               doc.tags
                 .split(",")
                 .map((tag: string, index: number) => <p key={index}>{tag}</p>)}
+          </div>
+          <div className="my-3 flex gap-4 items-center justify-end">
+            {doc.githubUrl && (
+              <a
+                href={doc.githubUrl}
+                target="_blank"
+                className="flex gap-2 items-center text-white hover:text-white/70"
+              >
+                <GitHub />
+                <h5>Sourse Code</h5>
+              </a>
+            )}
+            {doc.websiteUrl && (
+              <a
+                target="_blank"
+                href={doc.websiteUrl}
+                className="flex gap-2 items-center text-white hover:text-white/70"
+              >
+                <h5>Website</h5>
+                <OpenInNewIcon />
+              </a>
+            )}
           </div>
         </div>
         <Mdx code={doc.body.code} />

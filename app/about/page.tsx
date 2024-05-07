@@ -87,7 +87,7 @@ const AboutMe = () => {
               </h2>
               <p className=" px-4 text-lg leading-6 2xl:leading-8 2xl:text-xl text-white/70">
                 It&apos;s difficult to pinpoint why I started coding because I
-                can&apos;t recall a time when I wasn&qpos;t involved in it.
+                can&apos;t recall a time when I wasn&apos;t involved in it.
                 However, there are several key reasons why I chose IT:
               </p>
               <div className="flex flex-col gap-3 my-3 px-4">
@@ -109,13 +109,13 @@ const AboutMe = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white/10 rounded-xl p-2 md:p-7 w-full max-w-[400px] md:max-w-none md:w-2/5 overflow-hidden">
+          <div className="bg-primary/60 rounded-full p-2 md:p-7 max-w-[400px] md:max-w-none md:w-2/5 overflow-hidden">
             <Image
               src={"/images/about-me.jpg"}
               alt={"about-me"}
               width={400}
               height={400}
-              className="object-cover w-full h-60 md:h-auto rounded-xl"
+              className="object-cover w-full h-60 md:h-auto rounded-full"
             />
           </div>
         </div>

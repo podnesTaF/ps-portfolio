@@ -41,16 +41,24 @@ export const sideBarNavContent: SidebarNavItem[] = [
         href: "/projects/abm-mobile",
       },
       {
-        title: "AHMO chat",
-        href: "/projects/ahmo-platforms",
-      },
-      {
         title: "CFIT Factory",
         href: "/projects/cfit-factory",
       },
       {
         title: "FeatureCraftJs",
         href: "/projects/feature-craft-js",
+      },
+      {
+        title: "Meminder",
+        href: "/projects/meminder",
+      },
+      {
+        title: "CS Utopia",
+        href: "/projects/cs-utopia",
+      },
+      {
+        title: "AHMO Platforms",
+        href: "/projects/ahmo-platforms",
       },
     ],
   },

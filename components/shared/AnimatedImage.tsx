@@ -38,9 +38,7 @@ const AnimatedImage = ({
       height={(height as number) || 500}
       {...props}
       alt={alt ?? "image"}
-      className={`overflow-hidden max-w-[80%] 3xl:h-[600px] 3xl:w-[600px] fixed right-0 bottom-0 transition-all ease-in-out delay-500 object-cover -z-10 ${
-        isScrolled ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"
-      }`}
+      className={`overflow-hidden bg-primary/60 rounded-full max-w-[80%] 3xl:h-[600px] 2xl:w-[500px] 3xl:w-[600px] absolute right-0 bottom-0 transition-all delay-500 object-cover -z-10`}
     />
   );
 };

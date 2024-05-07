@@ -36,7 +36,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <section className="min-h-screen my-20 max-w-6xl pl-3 md:pl-12 xl:pl-6 pr-3 mx-auto">
+    <section className="min-h-screen my-10 md:my-0 max-w-6xl pl-3 md:pl-12 xl:pl-6 pr-3 mx-auto flex flex-col justify-center">
       <div id="what-i-offer" className="mb-5 lg:mb-10 xl:mb-12 scroll-mt-32">
         <h5 className="text-white font-medium mb-2 text-lg lg:text-xl">
           Introduction
