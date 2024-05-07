@@ -35,6 +35,12 @@ var Doc = defineDocumentType(() => ({
     published: {
       type: "boolean",
       default: true
+    },
+    githubUrl: {
+      type: "string"
+    },
+    websiteUrl: {
+      type: "string"
     }
   },
   computedFields
@@ -80,4 +86,4 @@ export {
   Doc,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-GUPCJJJV.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-6AB4SVQO.mjs.map

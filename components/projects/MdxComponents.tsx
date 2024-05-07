@@ -93,7 +93,7 @@ const components = {
     />
   ),
   li: ({ className, ...props }: HTMLAttributes<HTMLLIElement>) => (
-    <li className={clsx("text-white mt-2", className)} {...props} />
+    <li className={clsx("text-white mt-2 not-italic", className)} {...props} />
   ),
   blockquote: ({ className, ...props }: HTMLAttributes<HTMLQuoteElement>) => (
     <blockquote

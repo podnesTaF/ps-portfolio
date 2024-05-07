@@ -28,7 +28,7 @@ const HobbieCard = ({
       tiltMaxAngleY={30}
       glareColor="#aaa6c3"
     >
-      <div className="bg-[#1b1a2ea9] backdrop-blur-lg overflow-hidden h-full w-full rounded-lg">
+      <div className="bg-[#1b1a2ea9] backdrop-blur-lg overflow-hidden h-full w-full rounded-lg flex flex-col">
         <div className="relative h-[250px] w-full">
           <Image
             src={imageUrl}
@@ -43,7 +43,7 @@ const HobbieCard = ({
             </div>
           </div>
         </div>
-        <div className="p-5">
+        <div className="p-5 flex-1">
           <h3 className="text-3xl text-white">{title}</h3>
           <p className="mt-2 text-base md:text-lg text-gray-300 font-medium">
             {subtitle}

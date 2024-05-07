@@ -38,6 +38,12 @@ export const Doc = defineDocumentType(() => ({
       type: "boolean",
       default: true,
     },
+    githubUrl: {
+      type: "string",
+    },
+    websiteUrl: {
+      type: "string",
+    },
   },
   computedFields,
 }));

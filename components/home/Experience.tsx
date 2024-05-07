@@ -56,7 +56,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen my-20 max-w-6xl pl-3 md:pl-12 xl:pl-6 pr-3 mx-auto scroll-mt-32"
+      className="min-h-screen my-10 max-w-6xl pl-3 md:pl-12 xl:pl-6 pr-3 mx-auto scroll-mt-32"
     >
       <div className="mb-5 lg:mb-10 xl:mb-12">
         <h5 className="text-white font-medium mb-2 text-lg lg:text-xl">
