@@ -38,8 +38,8 @@ const hobbies = [
   {
     id: 2,
     title: "Running",
-    subtitle: "I'm not bad at running",
-    imageUrl: "/images/running.png",
+    subtitle: "My way of meditation and relaxation",
+    imageUrl: "/images/running.jpg",
     Icon: DirectionsRunIcon,
     tags: ["Sport", "Endurance", "Runnings"],
   },

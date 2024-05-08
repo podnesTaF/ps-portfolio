@@ -13,7 +13,7 @@ const GitHub = () => {
       className="overflow-hidden my-20 max-w-6xl pl-3 md:pl-12 xl:pl-6 pr-3 mx-auto flex flex-col items-center"
     >
       <h3 className="text-white text-2xl md:text-3xl xl:text-4xl mb-10">
-        Codding Everyday, <span className="text-primary">Why Not?</span>
+        Coding Everyday, <span className="text-primary">Why Not?</span>
       </h3>
       <div className="w-full">
         <div className="overflow-x-auto w-full flex justify-center">
