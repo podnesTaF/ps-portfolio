@@ -55,7 +55,7 @@ const DocsPage = async ({ params }: DocPageProps) => {
                 className="flex gap-2 items-center text-white hover:text-white/70"
               >
                 <GitHub />
-                <h5>Sourse Code</h5>
+                <h5>Source Code</h5>
               </a>
             )}
             {doc.websiteUrl && (

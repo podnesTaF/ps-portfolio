@@ -8,7 +8,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const cvUrl =
-  "https://storage.googleapis.com/abe_cloud_storage/website%2FCV_Oleksii_Pidnebesnyi.pdf";
+  "https://storage.googleapis.com/abe_cloud_storage/website%2FCV_Oleksii.pdf";
 
 const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
   cvUrl
@@ -31,7 +31,7 @@ const CVPage = () => {
   useEffect(() => {
     const fetchFile = async () => {
       try {
-        const response = await fetch("/documents/CV_Oleksii_Pidnebesnyi.pdf", {
+        const response = await fetch("/documents/CV_Oleksii.pdf", {
           method: "GET",
           headers: {
             "Content-Type": "application/pdf",
@@ -56,9 +56,7 @@ const CVPage = () => {
             variant={"contained"}
             className="!rounded-none !font-semibold !text-white"
             LinkComponent={"a"}
-            href={
-              "https://storage.googleapis.com/abe_cloud_storage/website%2FCV_Oleksii_Pidnebesnyi.pdf"
-            }
+            href={cvUrl}
             target="_blank"
             download={true}
           >
@@ -101,13 +99,7 @@ const CVPage = () => {
         </div>
       </div>
       <div>
-        <Document
-          file={file}
-          onLoadSuccess={({ numPages }) => {
-            console.log(numPages);
-          }}
-          className="d-flex justify-content-center"
-        >
+        <Document file={file} className="d-flex justify-content-center">
           <Page pageNumber={1} scale={isMedium ? (isLarge ? 1.6 : 1) : 0.8} />
         </Document>
       </div>
