@@ -15,7 +15,7 @@ export type TExperience = {
 
 export const experiences: TExperience[] = [
   {
-    title: "Continues learning",
+    title: "Continuous learning",
     imageSrc: "/logos/codding.png",
     iconBg: "#E6DEDD",
     date: "2020 - Future",
@@ -27,7 +27,7 @@ export const experiences: TExperience[] = [
     ],
   },
   {
-    title: "Frontend developer Apprenticeship",
+    title: "Frontend Developer Apprenticeship",
     companyName: "HackYourFuture",
     imageSrc: "/logos/hyf.png",
     iconBg: "#E6DEDD",
