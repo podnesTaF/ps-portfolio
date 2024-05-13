@@ -1,20 +1,14 @@
 ---
-title: Meminder - web reminder app.
+title: Meminder - Web-based Reminder Application
 date: February - May 2024
-tags: Web,Laravel,Group,Univerity
+tags: Web,Laravel,Group,University
 githubUrl: https://github.com/itfactory-tm/2024-ProjectPHP-701
 websiteUrl: https://lsta.meminder.be
 ---
 
 ## Introduction
 
-This is the second year Univerity projected built in a team of 6 people. We were challenged to go though a lot of sessions with client and build:
-
-- Requirement Analysis
-- Data Models
-- Figma UX/UI designs
-- Code using php laravel
-- Deploy on [combell](https://www.combell.com/en/)
+**Meminder** is a sophisticated web-based reminder application developed by a team of six students during their second year at the university. Our project aims to assist individuals with memory issues by providing a simple, yet powerful tool to manage daily activities and health-related tasks.
 
 <MdxImage
   src="https://storage.googleapis.com/abe_cloud_storage/website%2Fmeminder-landing.png"
@@ -22,3 +16,61 @@ This is the second year Univerity projected built in a team of 6 people. We were
   height={500}
   className="mx-auto mt-5 mb-4"
 />
+
+## Project Overview
+
+### Client
+
+Our client is a non-IT specialist who struggles with memory problems, often forgetting daily tasks and appointments. This application was specifically designed to enhance her independence and quality of life by providing:
+
+- A unified platform to manage daily tasks, appointments, and medications.
+- Interactive reminders and notifications.
+- A personal diary for keeping track of daily events and notes.
+
+### Features
+
+<MdxImage
+  src="https://storage.googleapis.com/abe_cloud_storage/website%2Fmeminder-features.png"
+  width={900}
+  height={700}
+  className="mx-auto mt-5 mb-4"
+/>
+
+#### User Roles
+
+- **Patient:** Manage personal events, tasks, prescriptions, and diary. Controlling access of caretakers
+- **Caretaker:** Assist in managing and reviewing patient schedules and health-related tasks.
+- **Guest:** Provide feedback and view certain information through secure access.
+
+#### Core Functionalities
+
+1. **Event Management:** Create, view, and edit personal events with options to add tasks and checklists.
+2. **Prescription Viewer:** Maintain and view an organized list of medications.
+3. **Personal Diary:** Record daily occurrences and personal notes in a secure diary.
+4. **Dynamic Questionnaires:** Fill out and manage health-related questionnaires.
+5. **Profile Management:** Update personal information and manage account settings.
+
+## Technology Stack
+
+- **Back-end:** PHP with Laravel Framework
+- **Front-end:** Tailwind CSS for styling, Livewire and Alpine.js for dynamic interactions
+- **Database:** MySQL for data management
+- **Authentication:** Laravel Jetstream for secure user authentication
+
+## Design and Development Process
+
+### Requirement Analysis
+
+Detailed sessions with the client led to a clear understanding of the functional and non-functional requirements, which were meticulously documented and modeled using use-case diagrams.
+
+### Data Modeling
+
+We structured our data to ensure efficient data retrieval and storage, focusing on relationships between different data entities relevant to user activities and system functionality.
+
+### Implementation
+
+The application was developed in iterative phases, with continuous integration of client feedback and rigorous testing to ensure reliability and user satisfaction.
+
+## Conclusion
+
+**Meminder** stands as a testament to the potential of technology to significantly improve the lives of individuals facing daily challenges due to memory issues. We invite you to explore the application [here](https://lsta.meminder.be) and review our project code on [GitHub](https://github.com/itfactory-tm/2024-ProjectPHP-701).
