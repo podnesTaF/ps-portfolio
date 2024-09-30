@@ -55,14 +55,29 @@ export const experiences: TExperience[] = [
   {
     title: "Full Stack Developer",
     companyName: "Ace Battle Association",
-    imageSrc: "/logos/abm.png",
-    iconBg: "#E6DEDD",
-    date: "February 2023 - Present",
+    imageSrc: "/logos/aba.png",
+    iconBg: "#1f1e1c",
+    date: "February 2023 - June 2024",
     points: [
       "Develop user-friendly web interfaces that adapt to various devices, including creating specialized admin dashboards",
       "Utilize Node.js with NestJs for backend development",
       "Create and implement website designs and user interfaces fromscratch using Figma",
       "Develop a mobile application using React Native and Expo.",
+      "Project management and technical task delegation",
+    ],
+  },
+  {
+    title: "Technology Lead",
+    companyName: "Ace Battle Holding LTD",
+    imageSrc: "/logos/ab.png",
+    iconBg: "#fff",
+    date: "June 2024 - Present",
+    points: [
+      "Develop long-term technology strategies aligned with business goals.",
+      "Manage technical teams and ensure task execution.",
+      "Oversee software product development and quality control.",
+      "Ensure smooth IT infrastructure operations and security compliance.",
+      "Manage budgets and evaluate ROI for IT projects.",
     ],
   },
 ];

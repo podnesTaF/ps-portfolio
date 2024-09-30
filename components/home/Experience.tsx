@@ -26,7 +26,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
             alt={experience.companyName || "company"}
             width={100}
             height={100}
-            className="h-[60%] w-[60%] object-contain"
+            className="h-[80%] w-[80%] object-contain"
           />
         </div>
       }
