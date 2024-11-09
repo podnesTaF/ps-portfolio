@@ -67,7 +67,7 @@ export const experiences: TExperience[] = [
     ],
   },
   {
-    title: "Technology Lead",
+    title: "IT Project Manager",
     companyName: "Ace Battle Holding LTD",
     imageSrc: "/logos/ab.png",
     iconBg: "#fff",
