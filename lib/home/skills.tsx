@@ -1,4 +1,5 @@
 import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import StorageIcon from "@mui/icons-material/Storage";
 export interface Skill {
   id: number;
@@ -41,5 +42,12 @@ export const skills: Skill[] = [
       "Google Cloud Platform",
       "etc.",
     ],
+  },
+  {
+    id: 3,
+    title: `Mobile Development`,
+    Icon: PhoneIphoneIcon,
+    description: "I like develop cross platform apps",
+    techItems: ["React Native", "Expo", "Zustand", "React Query"],
   },
 ];
