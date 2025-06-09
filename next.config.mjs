@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-import { withContentlayer } from "next-contentlayer";
-export default withContentlayer({
+export default {
   images: {
-    domains: ["storage.googleapis.com"],
+    domains: ["storage.googleapis.com", 'localhost', 'oleksii-portfolio-api.up.railway.app'],
   },
-});
+}
 

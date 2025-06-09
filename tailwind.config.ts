@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         primary: "#915EFF",
         dark: "#171126",
+        secondary: "#A77BFF"
       },
       maxWidth: {
         "8xl": "1480px",

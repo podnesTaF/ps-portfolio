@@ -3,6 +3,7 @@ import {
   AssignmentOutlined,
   HomeOutlined,
   SentimentSatisfiedAltOutlined,
+  WorkOutline
 } from "@mui/icons-material";
 
 export const headerLinks = [
@@ -26,6 +27,12 @@ export const headerLinks = [
   },
   {
     id: 4,
+    title: "internship",
+    href: "/internship",
+    icon: WorkOutline,
+  },
+  {
+    id: 5,
     title: "CV",
     href: "/cv",
     icon: AssignmentOutlined,

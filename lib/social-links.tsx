@@ -10,7 +10,7 @@ export const socialLinks = [
   {
     network: "LinkedIn",
     username: "oleksii-pidnebesnyi",
-    url: "www.linkedin.com/in/oleksii-pidnebesnyi",
+    url: "https://www.linkedin.com/in/oleksii-pidnebesnyi",
     icon: LinkedIn,
   },
   {

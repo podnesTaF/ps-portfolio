@@ -1,12 +1,15 @@
-import { TExperience, experiences } from "@/lib/home/experiences";
+import { getHomeData } from "@/api/home";
+import { getImageUrl } from "@/api/projects";
+import { Experience as TExperience } from "@/api/types";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
+import Markdown from "../projects/Markdown";
 
 const ExperienceCard: React.FC<TExperience> = (experience) => {
   return (
@@ -17,13 +20,13 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
+      date={experience.timeframe}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
           <Image
-            src={experience.imageSrc}
-            alt={experience.companyName || "company"}
+            src={getImageUrl(experience.icon?.formats?.small?.url)}
+            alt={experience.title || "company"}
             width={100}
             height={100}
             className="h-[80%] w-[80%] object-contain"
@@ -38,21 +41,24 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
         </p>
       </div>
 
-      <ul className="ml-5 mt-5 list-disc space-y-2">
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-white-100 pl-1 text-[14px] tracking-wider"
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <Markdown size="sm" content={experience.description} />
+      </div>
     </VerticalTimelineElement>
   );
 };
 
 const Experience = () => {
+  const [experiences, setExperiences] = useState<TExperience[]>([])
+
+  useEffect(() => {
+    (async () => {
+      const homedata = await getHomeData();
+
+      setExperiences(homedata.experiences)
+    })()
+  }, [])
+
   return (
     <section
       id="experience"

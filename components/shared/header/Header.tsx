@@ -48,15 +48,14 @@ const Header = () => {
             {headerLinks.map((link) => (
               <Link
                 key={link.id}
-                className={`flex items-center gap-2 lg:gap-3 px-3 py-2 rounded-md ${
-                  pathname === link.href
-                    ? "text-primary hover:text-primary/80"
-                    : "text-white hover:text-gray-300"
-                }`}
+                className={`flex items-center gap-2 lg:gap-3 px-3 capitalize py-2 rounded-md ${pathname === link.href
+                  ? "text-primary hover:text-primary/80"
+                  : "text-white hover:text-gray-300"
+                  }`}
                 href={link.href}
               >
                 <link.icon />
-                <h4 className="text-base font-medium">{link.title}</h4>
+                {link.title}
               </Link>
             ))}
           </nav>

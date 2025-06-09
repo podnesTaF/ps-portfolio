@@ -1,37 +1,57 @@
 "use client";
 
 import { Skeleton } from "@mui/material";
-import { useQuery } from "@tanstack/react-query";
-import { LottieComponentProps } from "lottie-react";
-import { Suspense, lazy } from "react";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 
-const LazyLottieComponent = lazy(() => import("lottie-react"));
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+  loading: () => <Skeleton variant="rectangular" width={200} height={200} />,
+});
 
-interface LottieProps<T extends Record<string, unknown>> {
-  id: string;
+// simple in-module cache
+const animationCache: Record<string, unknown> = {};
+
+interface LazyLottieProps {
+  id: string; // name of JSON file (e.g. "fullstack")
+  height?: number;
+  width?: number;
+  loop?: boolean;
+  autoplay?: boolean;
 }
-const getAnimationData = () => {
-  return import("@/public/animations/fullstack.json");
-};
-export function LazyLottie<T extends Record<string, unknown>>({
-  id,
-  ref,
-  ...props
-}: LottieProps<T> & Omit<LottieComponentProps, "animationData">) {
-  const { data } = useQuery({
-    queryKey: [id],
-    queryFn: async () => {
-      void import("lottie-react");
-      return getAnimationData();
-    },
-    enabled: typeof window !== "undefined",
-  });
 
-  if (!data) return <Skeleton height={props.height} width={props.width} />;
+export function LazyLottie({
+  id,
+  height = 200,
+  width = 200,
+  loop = true,
+  autoplay = true,
+}: LazyLottieProps) {
+  // initialize with cached data if present
+  const [animationData, setAnimationData] = useState<any>(animationCache[id] || null);
+
+  useEffect(() => {
+    if (!animationCache[id]) {
+      import(`@/public/animations/${id}.json`)
+        .then((mod) => {
+          const data = mod.default || mod;
+          animationCache[id] = data;
+          setAnimationData(data);
+        })
+        .catch((err) => console.error("Lottie JSON load failed:", err));
+    }
+  }, [id]);
+
+  if (!animationData) {
+    return <Skeleton variant="rectangular" width={width} height={height} />;
+  }
 
   return (
-    <Suspense fallback={<Skeleton height={props.height} width={props.width} />}>
-      <LazyLottieComponent animationData={data} {...props} />
-    </Suspense>
+    <Lottie
+      animationData={animationData}
+      loop={loop}
+      autoplay={autoplay}
+      style={{ width, height }}
+    />
   );
 }
