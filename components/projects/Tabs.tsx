@@ -48,6 +48,7 @@ function Tabs({ options, defaultTab, paramName, includeAll }: TabsProps) {
         )}
         {options.map((option) => (
           <div
+            key={option}
             className={twMerge("flex-1 py-3 px-4 flex justify-center cursor-pointer transition-all", activeTab === option ? "bg-primary hover:bg-primary/80" : "bg-dark hover:bg-primary/80")}
             onClick={() => onTabChange(option)}
           >

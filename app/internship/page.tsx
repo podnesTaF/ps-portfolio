@@ -47,7 +47,7 @@ const Internship = () => {
             <div>
               <h3 className="text-primary mb-3">Approach</h3>
               <p>
-                I analysed the legacy system's repeating page patterns and compared manual page creation with a metadata-driven strategy. After evaluating both, I chose a Dynamic UI Configuration approach, designing a three-layer architecture: a Configuration Studio, a Builder Engine micro-frontend, and an Integration Layer.
+                I analysed the legacy system&apos;s repeating page patterns and compared manual page creation with a metadata-driven strategy. After evaluating both, I chose a Dynamic UI Configuration approach, designing a three-layer architecture: a Configuration Studio, a Builder Engine micro-frontend, and an Integration Layer.
               </p>
             </div>
             <div>
