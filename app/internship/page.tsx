@@ -1,4 +1,5 @@
 import Sidebar from "@/components/internship/Sidebar"
+import { SmartLink } from "@/components/projects/SmartLink"
 import Image from "next/image"
 
 const Internship = () => {
@@ -30,6 +31,13 @@ const Internship = () => {
         <Sidebar />
         <div className="flex-1 lg:flex-[2] flex">
           <div className="max-w-4xl w-full p-5  flex flex-col gap-4">
+            <div>
+              <h3 className="text-primary mb-3">Watch Demo</h3>
+              <SmartLink
+                url={'https://youtu.be/cGu3EQgiOeM'}
+                name={'Demo'}
+              />
+            </div>
             <div>
               <h3 className="text-primary mb-3">Objective</h3>
               <p>

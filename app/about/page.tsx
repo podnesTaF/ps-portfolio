@@ -1,29 +1,17 @@
 import HobbieCard from "@/components/about/HobbieCard";
-import AssignmentLateIcon from "@mui/icons-material/AssignmentLate";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import BrushIcon from "@mui/icons-material/Brush";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import ReplayCircleFilledIcon from "@mui/icons-material/ReplayCircleFilled";
 import SensorOccupiedIcon from "@mui/icons-material/SensorOccupied";
 import Image from "next/image";
 
 const points = [
   {
     id: 1,
-    Icon: AssignmentLateIcon,
-    title: "The amount of challenges is remarkable.",
-  },
-  {
-    id: 2,
-    Icon: ReplayCircleFilledIcon,
-    title: "Demands for consistency",
-  },
-  {
-    id: 3,
     Icon: SensorOccupiedIcon,
-    title: "Difficulty and Stress",
-  },
+    title: "Not because It is easy, but because it is hard",
+  }
 ];
 
 const hobbies = [
@@ -88,7 +76,7 @@ const AboutMe = () => {
               <p className=" px-4 text-lg leading-6 2xl:leading-8 2xl:text-xl text-white/70">
                 It&apos;s difficult to pinpoint why I started coding because I
                 can&apos;t recall a time when I wasn&apos;t involved in it.
-                However, there are several key reasons why I chose IT:
+                However, there is a key reason why I chose IT:
               </p>
               <div className="flex flex-col gap-3 my-3 px-4">
                 {points.map((point) => (
