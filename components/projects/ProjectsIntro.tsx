@@ -1,8 +1,8 @@
-import { LazyLottie } from "./DisplayLottie";
+import Image from "next/image";
 
 const ProjectsIntro = () => {
   return (
-    <section className="relative flex items-center justify-center">
+    <section className="relative flex items-center justify-center px-3">
       <div className="flex flex-col-reverse md:flex-row justify-between gap-6 items-center w-full">
         <div className="flex flex-col gap-5 w-full">
           <p className="text-base md:text-lg xl:text-xl font-medium text-white xl:leading-8">
@@ -13,7 +13,7 @@ const ProjectsIntro = () => {
             projects
           </p>
         </div>
-        <LazyLottie loop id={"fullstack"} width={600} height={600} />
+        <Image src={"/images/projects.png"} alt="projects" width={600} height={500} className="w-full sm:w-96 xl:w-[500px] h-auto" />
       </div>
     </section>
   );

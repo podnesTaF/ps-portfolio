@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
 import { twMerge } from 'tailwind-merge';
 
 
@@ -35,50 +34,27 @@ function Tabs({ options, defaultTab, paramName, includeAll }: TabsProps) {
 
 
   return (
-    <div className='max-w-full'>
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={6}
-        breakpoints={{
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          800: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1200: {
-            slidesPerView: 6,
-            spaceBetween: 30,
-          },
-        }}
+    <div className='w-auto'>
+      <div
+        className='flex items-center gap-4'
       >
         {includeAll && (
-          <SwiperSlide>
-            <div
-              className={twMerge("w-full py-3 px-4 flex justify-center cursor-pointer transition-all", !activeTab ? "bg-primary hover:bg-primary/80" : "bg-dark hover:bg-primary/80")}
-              onClick={() => onTabChange("")}
-            >
-              <h4 className="text-xl font-semibold text-white">All</h4>
-            </div>
-          </SwiperSlide>
+          <div
+            className={twMerge("flex-1 py-3 px-4 flex justify-center cursor-pointer transition-all", !activeTab ? "bg-primary hover:bg-primary/80" : "bg-dark hover:bg-primary/80")}
+            onClick={() => onTabChange("")}
+          >
+            <h4 className="text-xl font-semibold text-white">All</h4>
+          </div>
         )}
-        {options.map((option, i) => (
-          <SwiperSlide key={i}>
-            <div
-              className={twMerge("w-full py-3 px-4 flex justify-center cursor-pointer transition-all", activeTab === option ? "bg-primary hover:bg-primary/80" : "bg-dark hover:bg-primary/80")}
-              onClick={() => onTabChange(option)}
-            >
-              <h4 className="text-xl font-semibold text-white">{option}</h4>
-            </div>
-          </SwiperSlide>
+        {options.map((option) => (
+          <div
+            className={twMerge("flex-1 py-3 px-4 flex justify-center cursor-pointer transition-all", activeTab === option ? "bg-primary hover:bg-primary/80" : "bg-dark hover:bg-primary/80")}
+            onClick={() => onTabChange(option)}
+          >
+            <h4 className="text-xl font-semibold text-white">{option}</h4>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </div>
   )
 }

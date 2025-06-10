@@ -8,7 +8,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const cvUrl =
-  "https://storage.googleapis.com/abe_cloud_storage/website%2FCV_Oleksii.pdf";
+  "https://storage.googleapis.com/abe_cloud_storage/website/CV_OLEKSII_PIDNEBESNYI_2025.pdf";
 
 const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
   cvUrl
@@ -31,7 +31,7 @@ const CVPage = () => {
   useEffect(() => {
     const fetchFile = async () => {
       try {
-        const response = await fetch("/documents/CV_Oleksii.pdf", {
+        const response = await fetch("/documents/CV_OLEKSII_PIDNEBESNYI_2025.pdf", {
           method: "GET",
           headers: {
             "Content-Type": "application/pdf",
