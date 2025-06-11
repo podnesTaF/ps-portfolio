@@ -20,6 +20,8 @@ async function ProjectsPage({
   ])
 
 
+  const sorted = projects.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+
   return (
     <main className="relative lg:gap-10 py-20 flex justify-center max-w-7xl mx-auto w-full px-3 overflow-hidden">
       <div className="lg:flex-1 px-4">
@@ -46,10 +48,10 @@ async function ProjectsPage({
             </div>
           )}
           <div className="grid w-auto grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 py-8 gap-4 md:gap-12">
-            {projects.map(project => (
+            {sorted.map(project => (
               <MdxCard
                 key={project.documentId}
-                href={`/projects/${project.slug}`}
+                href={`${project.slug}`}
                 imageUrl={getImageUrl(project.thumb?.formats?.small?.url)}
                 title={project.title}
                 tags={project.tags.map(t => t.text).join(",")}

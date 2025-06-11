@@ -25,7 +25,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       icon={
         <div className="flex h-full w-full items-center justify-center">
           <Image
-            src={getImageUrl(experience.icon?.formats?.small?.url)}
+            src={getImageUrl(experience.icon?.url)}
             alt={experience.title || "company"}
             width={100}
             height={100}

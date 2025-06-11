@@ -35,7 +35,7 @@ export const getProjects = async (tag?: string) => {
 export const getProjectDetails = async (slug: string) => {
   const query = qs.stringify({
     filters: {
-      slug: { $eq: slug },
+      slug: { $eq: `/projects/${slug}` },
     },
     populate: {
       tags: '*',

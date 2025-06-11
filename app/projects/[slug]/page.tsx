@@ -14,7 +14,7 @@ async function ProjectPage({ params: { slug } }: { params: { slug: string } }) {
       <div className="px-4">
         <div className={"space-y-4 mb-4"}>
           <h1 className="inline-block font-heading text-4xl lg:text-5xl text-white">
-            {project.title}
+            {project?.title}
           </h1>
           <div className='flex flex-col md:flex-row justify-between gap-4 md:items-center max-w-5xl'>
             <div className="flex gap-4 text-gray-300 text-sm md:text-lg font-medium">
@@ -49,7 +49,7 @@ async function ProjectPage({ params: { slug } }: { params: { slug: string } }) {
                 return (
                   <MdxImage
                     key={block.id}
-                    src={getImageUrl(block.image?.formats?.large?.url)}
+                    src={getImageUrl(block.image?.formats?.medium?.url)}
                     className="rounded-xl w-full md:w-2/3 h-auto"
                   />
                 );

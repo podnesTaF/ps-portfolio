@@ -40,7 +40,7 @@ export default function TocSidebar({
         {allProjects.map(p => (
           <li className='list-none' key={p.id}>
             <Link
-              href={`/projects/${p.slug}`}
+              href={`${p.slug}`}
               className={twMerge(`text-base capitalize hover:text-primary transition-colors`, p.slug === currProjSlug ? 'text-primary' : "")}
             >
               {p.title}

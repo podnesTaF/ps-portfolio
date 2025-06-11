@@ -63,10 +63,10 @@ const AboutMe = () => {
               <p className="px-2 md:px-4 text-white/70 font-medium text-lg leading-6 2xl:leading-8 2xl:text-xl">
                 Hello again, I am{" "}
                 <span className="text-primary">Oleksii Pidnebesnyi</span>{" "}
-                originally from Ukraine. I am currently studying in Belgium at{" "}
-                <span className="text-primary">Thomas More</span> and working as
-                a software developer at{" "}
-                <span className="text-primary">Ace Battle Association</span>
+                originally from Ukraine. I recently completed my studies at{" "}
+                <span className="text-primary">Thomas More</span> in Belgium and working as
+                an application engineer at{" "}
+                <span className="text-primary">Van Genechten Packaging</span>
               </p>
             </div>
             <div className="mt-3 md:mt-10">
