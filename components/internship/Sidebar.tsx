@@ -11,7 +11,7 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/CV_Oleksii.pdf'}
+              href={'/documents/Internship-Project-Planning-Updated.docx'}
               target="_blank"
               download={true}
             >
@@ -21,7 +21,7 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/CV_Oleksii.pdf'}
+              href={'/documents/Realisation Document UI Builder Oleksii Pidnebesnyi.docx'}
               target="_blank"
               download={true}
             >
@@ -31,7 +31,7 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/CV_Oleksii.pdf'}
+              href={'/documents/Reflection on Intenship Oleksii.docx'}
               target="_blank"
               download={true}
             >
