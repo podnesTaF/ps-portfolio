@@ -41,7 +41,7 @@ async function ProjectPage({ params: { slug } }: { params: { slug: string } }) {
           {project.body.map((block: any) => {
             switch (block.__component) {
               case 'meta.text':
-                return <div key={block.id} className='my-4'>
+                return <div key={block.id} className='my-4 w-full'>
                   <Markdown content={block.content} />
                 </div>;
 

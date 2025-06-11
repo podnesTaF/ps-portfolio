@@ -6,7 +6,7 @@ export function SmartLink({ url, name }: { url: string; name: string }) {
 
 
   if (isYoutube) {
-    return <div className='py-4 max-w-full'>
+    return <div className='py-4 w-full max-w-full'>
       <YoutubePlayer url={url} />
     </div>;
   }
