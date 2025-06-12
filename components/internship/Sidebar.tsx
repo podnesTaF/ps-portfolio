@@ -11,9 +11,8 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/Internship-Project-Planning-Updated.docx'}
+              href={'/documents/Internship-Project-Planning-Updated.pdf'}
               target="_blank"
-              download={true}
             >
               Project Planning
             </Button>
@@ -21,9 +20,8 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/Realisation Document UI Builder Oleksii Pidnebesnyi.docx'}
+              href={'/documents/Realisation Document UI Builder Oleksii Pidnebesnyi.pdf'}
               target="_blank"
-              download={true}
             >
               Realisation Document
             </Button>
@@ -31,9 +29,8 @@ function Sidebar() {
               variant={"contained"}
               className="!rounded-none !font-semibold !text-white"
               LinkComponent={"a"}
-              href={'/documents/Reflection on Intenship Oleksii.docx'}
+              href={'/documents/Reflection on Intenship Oleksii.pdf'}
               target="_blank"
-              download={true}
             >
               Reflection
             </Button>
